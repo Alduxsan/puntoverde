@@ -1,0 +1,627 @@
+* {
+	font-family: 'Quicksand', sans-serif;
+}
+
+:root{
+  --dark: rgb(65, 66, 15);
+  --primary:rgb(96, 99, 9);
+  --light: rgb(162, 166, 46);
+	--amarillo: rgb(247, 194, 0);
+	--marron: rgb(230, 96, 14);
+}
+
+html{
+	background: rgb(243, 245, 201);
+	scroll-behavior: smooth;
+	
+}
+
+body{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.header {
+	width: 100%;
+	height: auto;
+	animation-name: fade-header;
+	animation-duration: 1s;
+}
+
+.header img{
+	width: 100%;
+	height:auto;
+}
+
+.header-menu{
+	flex-basis: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content:space-around;
+	padding:1%
+}
+
+.header-box-container{
+	flex-basis: 300px;
+	display: flex;
+	flex-direction: column;
+	height: 300px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	border-radius: 8px;
+	margin: 1%;
+}
+
+.header-menu-img{
+	padding:1%;
+	width: 100%;
+	height: auto;
+	flex-grow: 1;
+	flex-shrink: 1;
+	border-radius: 8px;
+	justify-content: center;
+	align-items: center;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-origin: content-box;
+}
+
+.header-menu div a{
+		display: block;
+		width: 100%;
+		height: 100%;
+}
+
+.header-box-container p{
+		color: #000;
+		text-align: center;
+		padding: 3px;
+		border-radius: 6px;
+		font-family: 'Lilita One', cursive;
+		font-size: 150%;
+		text-decoration: none;
+		transition: all 0.3s;
+}
+
+.header-box-container:hover p {
+	color: var(--primary);
+}
+
+.header-box-container:hover{
+	color: var(--amarillo);
+	border-top: 2px solid var(--dark);
+	border-bottom: 2px solid var(--dark);
+}
+
+.titulares{
+	width: 90%;
+	height:100px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.about{
+	background-image: url("../res/header/pelirroja2.png");
+}
+
+.about-image{
+	background-image: url("../res/titulos/quienes.png");
+}
+
+.filosofia{
+	background-image: url("../res/header/about2.png");
+}
+
+.filosofia-image{
+	background-image: url(../res/titulos/filosofia.png);
+}
+
+
+.proyectos{
+	background-image: url("../res/header/mano-hoja2.png");
+	padding: 5%;
+}
+
+.proyectos-image{
+	background-image: url(../res/titulos/proyectos.png);
+}
+
+.integrantes{
+	background-image: url('../res/header/integrantes2.png');
+}
+.integrantes-image{
+	background-image: url(../res/titulos/integrantes.png);
+}
+
+
+.footer-data{
+	font-weight: bolder;
+	color: #000;
+}
+
+.cultivos__img {
+	
+	width: 100%;
+	height: 200px;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	background: url("../res/acelgas3.jpg") ;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size:cover;
+
+
+}
+
+.cita{
+	padding:1%;
+	width: 100%;
+	color: #ffffff;
+	text-shadow: 1px 3px 3px black;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 2.5rem;
+}
+
+.fade-in{
+	opacity:0;
+	transition: opacity 900ms ease-in;
+}
+
+.fade-in.appear {
+	height: 100%;
+	opacity: 1;
+	backdrop-filter: blur(6px)
+}
+
+.main-link-content{
+	padding: 1%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: auto;
+}
+
+.cards-container{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-top: 20px;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+	}
+
+.cards-container .card{
+	position: relative;
+	width: 100%;
+	display: flex;
+	
+	align-items:center;
+	justify-content: center;
+}
+
+.sub{
+	font-size: 2rem;
+}
+
+.cards-container .card .card__img{
+	flex: 0 0 30%;
+	height: auto;
+	margin: 20px;
+	}
+
+.cards-container .card .card__img img{
+	width: 100%;
+	border-radius: 8px;
+}
+
+.logo img{
+	display: block;
+	max-width: 70%;
+	margin: auto;
+}
+
+.card_content{
+	width: 65%;
+	background-color: rgba(247, 194, 0, 0.2);
+	padding: 20px;
+	border-radius: 8px;
+	margin-bottom: 10px;
+	transition: background 0.8s;
+}
+
+.card_content:hover{
+	background-color: rgba(247, 194, 0, .8);
+}
+
+.about-color{
+	background-color: rgba(96, 99, 9, 0.2);
+}
+
+.enseña-color{
+	background-color: rgba(230, 96, 14, 0.2);
+}
+
+.eres-comes-color{
+	background-color: rgba(162, 166, 46, 0.2);
+
+}
+.card_content h2{
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+.filosofia-title h2{
+	margin-bottom: 0;
+}
+
+.card_content p{
+	font-size: 1.5rem;
+	text-align: left;
+  	text-justify: inter-word;
+}
+/* SECCION PROYECTOS */
+
+.proyectos-container{
+	width: 100%;
+	justify-content: center;
+	align-content: center;
+}
+
+.toggle-wrap{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-shrink: 1;
+	flex-direction: column;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.toggle-wrap .toggle-block{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	border: 1px solid #ccc;
+	color: #ffffff;
+	border-radius: 8px;
+	padding: 5px;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+	position:relative;
+	margin-bottom: 2%;
+}
+
+.toggle-block .toggle-trigger{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	position: relative;
+	padding: 2px;
+	margin: 0;
+	width: 100%;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.toggle-block .toggle-trigger::after{
+	content: '';
+	font-weight: 900;
+	position: absolute;
+	transform: translateY(-50%);
+	right: 0;
+	top: 50%;
+}
+
+.toggle-block .toggle-able{
+	display: none;
+	padding: 5%;
+}
+.toggle-block .toggle-able p{
+	color: #000;
+	font-size: 1.5rem;
+}
+
+.toggle-block.active{
+	color: #8d9000
+}
+
+
+.toggle-block .toggle-trigger h3{
+
+	backdrop-filter: blur(5px);
+	text-align: center;
+	align-self: flex-end;
+	padding: 10px;
+	border-radius: 8px;
+	font-family: 'Lilita One', cursive;
+	font-weight: lighter;
+	border-top: 2px solid var(--dark);
+	border-bottom: 2px solid var(--dark);
+	font-size: 2.5rem;
+	text-shadow: 1px 1px 3px black;
+}
+
+
+/*IMAGENES PROYECTOS*/
+.conservacion{
+	background: url("../res/proyectos/conservacion.svg");
+}
+
+.toggle-wrap .toggle-block .huerta{
+	background: url("../res/proyectos/huerta.png") no-repeat center;
+	background-size: contain;
+}
+
+.bioconstruccion{
+	background: url("../res/proyectos/bioconstruccion.png");
+}
+.pira{
+	background: url("../res/proyectos/pira2.png");
+}
+.educacion{
+	background: url("../res/proyectos/educacion.png");
+}
+.reciclaje{
+	background: url("../res/proyectos/reciclaje.png");
+}
+
+.proyecto-imagenes-container{
+	margin-bottom: 2%;
+}
+
+.carousel img {
+	object-fit:cover;
+  	height: 500px;
+	margin:5px;
+	border-radius: 8px;
+}
+
+/* FIN SECCION PROYECTOS */
+
+.integrantes-container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	background-image: url("../res/bosque.jpg");
+	background-size: cover;
+	background-position: center;
+	border-radius: 10px;
+}
+
+.integrantes-card{
+	margin: 1%;
+	padding:1%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	color: rgb(255, 255, 255);
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 300px;
+	height: 500px;
+	border-radius: 10px;
+}
+
+.integrantes-card p{
+	font-size: 1.3rem;
+}
+
+.integrantes-card h2{
+	text-align: center;
+	font-size: 2rem
+}
+
+.integrantes-bloque{
+	display: flex;
+	flex-direction: row;
+	width: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+.circle{
+	width: 200px;
+	height: 200px;
+	margin-bottom: 10px;
+	border-radius: 50%;
+	background-size:cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 6px solid #e7e7e7;
+}
+
+.text{
+	text-align:center;	
+}
+
+.andrea .circle{
+	background-image: url(../res/caras/andreaV.png);
+}
+
+.aldo .circle{
+	background-image: url(../res/caras/yoV.png)
+}
+
+.diego .circle{
+	background-image: url(../res/caras/diegoV.png)
+}
+
+.cristina .circle{
+	background-image: url(../res/caras/crisV.png)
+}
+
+.footer{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: center;
+	width: 100%;
+}
+
+.footer img{
+	height: 50px;
+	margin: 15px
+
+}
+
+/* MODAL */
+
+.modal-container{
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	background-color: rgba(0,0,0,0.3);
+	opacity: 0;
+	pointer-events: none;
+	display: flex;
+	justify-content	: center;
+	align-items: center;
+	
+}
+
+.modal-container.show{
+	pointer-events: auto;
+	opacity: 1;
+}
+
+button{
+	position:fixed;
+	right: 20px;
+	bottom: 20px;
+	background-color: rgb(71, 163, 134);
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+	padding: 10px 25px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0,0.2);
+	font-size: 14px;	
+}
+
+.modal{
+	background-color: #fff;
+	width: auto;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0,0.2);
+	text-align:center;
+
+}
+
+
+/* FIN MODAL */
+
+
+@keyframes fade-header {
+  from {opacity: 0;}
+  to {opacity: 100;}
+}
+
+@media (max-width: 991px){
+	.modal iframe{
+		width: 400px;
+	}
+
+	.card{
+		width: 100%;
+		flex-direction: column;
+	}
+	.circle{
+		width: 150px;
+		height: 150px;
+	}
+	.integrantes-card{
+		padding:2%
+	}
+	.sub {
+		font-size: 1.5rem;
+	}
+
+	.cita{
+		font-size: 1.8rem;
+	}
+
+	.toggle-block .toggle-trigger h3 {
+		font-size: 1.5rem;
+	}
+	.card_content{
+		width: 100%;
+		padding:3%
+	}
+	.main-link-content{
+		width: 90%;
+	}
+
+}
+@media (max-width: 688px){
+
+	.integrantes-bloque{
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 450px){
+	.modal iframe{
+		width: 350px;
+	}
+	.card_content{
+		width: 100%;
+	}
+	.toggle-block .toggle-able p{
+		font-size: 1rem;
+	}
+	.integrantes-card{
+		height: auto;
+		padding:2%
+	}
+	.integrantes-bloque{
+		flex-direction: column;
+	}
+	.header-box-container{
+		max-width: 200px;
+	}
+}
+
+@media (max-width: 360px){
+	.modal iframe{
+		width: 300px;
+	}
+
+	.card_content p, .sub{
+		font-size: 1rem;
+		text-align:left;
+}
+	.toggle-block .toggle-trigger h3 {
+	font-size: 1.1rem;
+}
+
+}
+
+@media ( min-width: 768px ) {
+  .carousel img {
+    height: 400px;
+  }
+  .modal iframe{
+	width: 600px;
+}
+}
